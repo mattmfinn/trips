@@ -1,5 +1,12 @@
 plugins {
     id 'java'
+    id 'application'
+}
+
+apply plugin: 'java'
+
+application {
+    mainClassName('samsara.CsvReader')
 }
 
 group 'com.theconstantvariable.samsara'
@@ -12,5 +19,5 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.10.0.pr3'
 }
