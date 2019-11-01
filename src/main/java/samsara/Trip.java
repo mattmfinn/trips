@@ -10,6 +10,7 @@ import java.util.Date;
  * We will map each line from the CSV into an instance of this Object in a type of Collection
  */
 
+//Ensures every value is mapped in the proper order.
 @JsonPropertyOrder({"durationSec", "startTime", "endTime", "startStationID", "startStationName", "startStationLatitude",
         "startStationLongitude", "endStationID", "endStationName", "endStationLatitude", "endStationLongitude",
         "bikeID", "userType", "memberBirthYear", "memberGender", "bikeShareForAllTrip"})
